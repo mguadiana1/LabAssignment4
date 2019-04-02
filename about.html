@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LabAssignment4</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+    p {
+      margin: 15px auto 20px;
+    }
+    body,
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .box-shadow {
+      -webkit-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+      box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+    }
+    .main-container-grid {
+      display: grid;
+      grid-template-rows: 1fr 13fr 1fr;
+      height: 100%;
+      grid-row-gap: 1em;
+    }
+    .r1,
+    .r3 {
+      display: grid;
+      background-color: powderblue;
+      padding: 1em;
+      align-items: center;
+    }
+    .r3 {
+      text-align: center;
+    }
+    .r2 {
+      height: 100%;
+      background-color: orangered;
+    }
+    .three-column {
+      display: grid;
+      grid-template-columns: 2fr 8fr 3fr;
+      background-color: orangered;
+      grid-column-gap: 1em;
+    }
+    .c1 {
+      min-width: 200px;
+    }
+    .c1, .c3 {
+      background-color: orangered;
+    }
+    .txt-center {
+      text-align: center;
+      margin: 15px auto 0px;
+      border-bottom: 1px solid #a8a7a7;
+      padding-bottom: 15px;
+    }
+    .left-nav {
+      list-style-type: none;
+    }
+    .left-nav > li > a {
+      display: block;
+      padding:15px 0px 15px 30px;
+      background-color: #f4f4f4;
+      font-weight: bold;
+      text-decoration: none;
+      transition-duration: 0.7s;
+    }
+    .left-nav > li > a:hover {
+      background-color: #8d8c8c;
+    }
+    .c2 {
+      padding: 40px 20%;
+      height: 100%;
+    }
+    .h2-content {
+      grid-column: 1 / 5;
+      height: 22px;
+      width: 100%;
+    }
+    .c2 > img {
+      width: 100%;
+      align-self: center;
+      max-height: 130px;
+    }
+  </style>
+</head>
+
+<body class="main-container-grid">
+  <div class="r1 box-shadow">
+    <h2><img src="./img/Logo2.jpg" alt="logo"></h2>
+  </div>
+  <div class="r2 one-column">
+    <div class="c2">
+      <a href= "./index.html" class="back-button">Back To Home</a>
+      <h2>Company Information</h2>
+      <p>Fresno Pitbull Saviors is a non-profit organization that was founded by Michael Guadiana in 2019. Our goal is to save atleast 500 battered pitbulls each year and find them a home worth barking about.</p>
+      <p>So far we are located in both Fresno and Clovis. Our Fresno location is 1234 W Victory Lane and our clovis location is 3289 N Fresno St. Although we are a new company, our passion for our furry friends is unparalled. We plan to expand into other parts of the Central Valley, within the next five years, in areas such as Reedley, Sanger, and Madera.</p>
+      <p>If you would like to volunteer, adopt one of our furry friends, or have any questions regarding our organization, feel free to give us a call at (559) 234-8594.</p>
+
+    </div>
+  </div>
+  <div class="r3">
+    Copyright 2019. Created By Michael Guadiana
+  </div>
+</body>
+
+</html>

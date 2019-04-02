@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LabAssignment4</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+        }
+
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+
+        .r1,
+        .r3 {
+            display: grid;
+            background-color: powderblue;
+            padding: 1em;
+            align-items: center;
+        }
+
+        .r3 {
+            text-align: center;
+        }
+
+        .r2 {
+            height: 100%;
+            background-color: orangered;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: orangered;
+            grid-column-gap: 1em;
+        }
+
+        .c1 {
+            min-width: 200px;
+        }
+
+        .c1,
+        .c3 {
+            background-color: powderblue;
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid white;
+            padding-bottom: 15px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px 15px 30px;
+            background-color: powderblue;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 0.7s;
+        }
+
+        .left-nav>li>a:hover {
+            background-color: powderblue;
+        }
+
+        .h2-content {
+            grid-column: 1 / 5;
+            height: 22px;
+            width: 150px;
+        }
+
+        .c2>img {
+            width: 100%;
+            align-self: center;
+            max-height: 130px;
+        }
+
+        .c2-first-row {
+            grid-column: 1 / 5;
+        }
+
+        .grid-button {
+            padding: 6px 12px;
+            background-color: powderblue;
+            float: right;
+        }
+
+        .gallery-table {
+            display: table;
+            width: 100%;
+
+        }
+
+        .gallery-table thead {
+            font-size: 16px;
+            font-weight: bold;
+            background-color: wheat;
+        }
+
+        .gallery-table td {
+            border: 1px solid black;
+        }
+
+        .gallery-table>tbody>tr>td>img {
+            max-width: 150px;
+        }
+
+        .buy-now {
+            padding: 7px 16px;
+            background-color: wheat;
+            float: right;
+            border-radius: 6px;
+            color: #FFF;
+            font-size: 16px;
+            transition-duration: 0.5s;
+
+
+        }
+
+        .buy-now:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body class="main-container-grid">
+    <div class="r1 box-shadow">
+        <h2><img src="./img/logo2.jpg" alt="logo"></h2>
+    </div>
+    <div class="r2 three-column">
+        <div class="c1 box-shadow">
+            <h2 class="txt-center">Navigation</h2>
+            <ul class="left-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="c2">
+            <div class="c2-first-row">
+                <a href="./gallery.html" class="grid-button">Gallery View</a>
+                <h2 class="txt-center h2-content">Grid</h2>
+
+            </div>
+            <table class="gallery-table">
+                <thead>
+                    <tr>
+                        <td>
+                            Image
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                        <td>
+                            Buy Now
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img class="box-shadow" src="./img/Pitbull.jpg" </td> <td>
+                            Killer
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            <button class="buy-now"> Buy Now</button>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="box-shadow" src="./img/Pitbull2.jpg" </td> <td>
+                            Shorty
+                        </td>
+                        <td>
+                            $102
+                        </td>
+                        <td>
+                            <button class="buy-now"> Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="box-shadow" src="./img/Pitbull3.jpg" </td> <td>
+                            Hugh
+                        </td>
+                        <td>
+                            $120
+                        </td>
+                        <td>
+                            <button class="buy-now"> Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="box-shadow" src="./img/Pitbull4.jpg" </td> <td>
+                            Bonnie
+                        </td>
+                        <td>
+                            $120
+                        </td>
+                        <td>
+                            <button class="buy-now"> Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="box-shadow" src="./img/Pitbull5.jpg" </td> 
+                        <td>
+                            Bill
+                        </td>
+                        <td>
+                            $150
+                        </td>
+                        <td>
+                            <button class="buy-now"> Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <img class="box-shadow" src="./img/Pitbull6.jpg"
+                            </td>
+                            <td>
+                                Rex
+                            </td>
+                            <td>
+                                $250
+                            </td>
+                            <td>
+                                <button class="buy-now"> Buy Now</button>
+                            </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <img class="box-shadow" src="./img/Jessie.jpg"
+                                    </td>
+                                    <td>
+                                        Rex
+                                    </td>
+                                    <td>
+                                        $250
+                                    </td>
+                                    <td>
+                                        <button class="buy-now"> Buy Now</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                            <td>
+                                                <img class="box-shadow" src="./img/Pitbull8.jpg"
+                                            </td>
+                                            <td>
+                                                Linda
+                                            </td>
+                                            <td>
+                                                $250
+                                            </td>
+                                            <td>
+                                                <button class="buy-now"> Buy Now</button>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>
+                                                        <img class="box-shadow" src="./img/Pitbull9.jpg"
+                                                    </td>
+                                                    <td>
+                                                        Tony
+                                                    </td>
+                                                    <td>
+                                                        $250
+                                                    </td>
+                                                    <td>
+                                                        <button class="buy-now"> Buy Now</button>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>
+                                                                <img class="box-shadow" src="./img/Pitbull10.jpg"
+                                                            </td>
+                                                            <td>
+                                                                Ellie
+                                                            </td>
+                                                            <td>
+                                                                $250
+                                                            </td>
+                                                            <td>
+                                                                <button class="buy-now"> Buy Now</button>
+                                                            </td>
+                                                            </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="c3 box-shadow">
+            <h2 class="txt-center">Recent product</h2>
+        </div>
+    </div>
+    <div class="r3">
+        Copyright 2019. Created By Michael Guadiana
+    </div>
+</body>
+
+</html>
